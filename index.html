@@ -9,6 +9,15 @@
   <body>
     <main>
       <div id="app">
+        <input
+          type="number"
+          name=""
+          id=""
+          required
+          placeholder="Inserisci numero"
+          v-model="num"
+        />
+        <button @click="getEmail()">Invia</button>
         <ul>
           <li v-for="elemento,i in email">{{elemento}}</li>
         </ul>
